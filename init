@@ -1,0 +1,5 @@
+cd /home
+echo "downloading emc_linux_64.tgz..."
+curl -o emc_linux_64.tgz https://install.edgematrix.pro/installer/emc_linux_64.tgz
+echo "extracting tgz..."
+tar xzf emc_linux_64.tgz
