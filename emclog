@@ -1,3 +1,4 @@
+p1=`expr $1 + 41000`
 cd /home/emc$1
-./edge-matrix miner status
+./edge-matrix miner status --grpc-address "127.0.0.1:$p1"
 tail -f node.$2
