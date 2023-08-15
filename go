@@ -20,5 +20,6 @@ sed -i 's#0.0.0.0:50001#0.0.0.0:'$p2'#g' emc$i
 sed -i 's#0.0.0.0:50002#0.0.0.0:'$p3'#g' emc$i
 sed -i 's#0.0.0.0:50003#0.0.0.0:'$p4'#g' emc$i
 sed -i 's#7860#$p5'#g' emc$i
+sed -i 's#emcth#emc"$i"#g' emc$i
 cp emc$i /usr/local/bin
 
