@@ -27,6 +27,6 @@ service emc$i start
 echo "waiting for register"
 sleep 20s
 cd /home/emc$i
-./edge-matrix miner register --commit set --node computing --principal kixnf-uvter-fkado-cgqad-2ffue-p6uzn-diq23-vpn3y-m5tgq-cnuqc-aae --grpc-address "127.0.0.1:$p1"
+./edge-matrix miner register --commit set --node computing --principal rakqt-iyuu2-4hre4-y4its-xk7q4-stmin-ptusv-yqagc-gnofs-ct2ev-fqe --grpc-address "127.0.0.1:$p1"
 sleep 60s
 done
