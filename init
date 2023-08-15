@@ -1,5 +1,5 @@
 chmod 777 emclog
-cp emclog /usr/log/bin
+cp emclog /usr/local/bin
 cd /home
 echo "downloading emc_linux_64.tgz..."
 curl -o emc_linux_64.tgz https://install.edgematrix.pro/installer/emc_linux_64.tgz
