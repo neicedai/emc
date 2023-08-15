@@ -1,0 +1,3 @@
+cd /home/emc$1
+./edge-matrix miner status
+tail -f node.$2
