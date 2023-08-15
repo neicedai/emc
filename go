@@ -22,4 +22,9 @@ sed -i 's#0.0.0.0:50003#0.0.0.0:'$p4'#g' emc$i
 sed -i 's#7860#$p5'#g' emc$i
 sed -i 's#emcth#emc"$i"#g' emc$i
 cp emc$i /usr/local/bin
-
+service emc$i start
+echo "waiting for register"
+sleep 20s
+cd /home/emc$i
+./edge-matrix miner register --commit set --node computing --principal kixnf-uvter-fkado-cgqad-2ffue-p6uzn-diq23-vpn3y-m5tgq-cnuqc-aae grpc-address "127.0.0.1:$p1"
+done
